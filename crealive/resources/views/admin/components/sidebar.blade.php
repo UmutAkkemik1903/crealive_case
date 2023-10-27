@@ -59,25 +59,25 @@
                 </a>
             </li>
             <li>
-                <a href="/category" class="nav-link text-white">
+                <a href="/admin/category" class="nav-link text-white">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                     Kategori
                 </a>
             </li>
             <li>
-                <a href="/subcategory" class="nav-link text-white">
+                <a href="/admin/subcategory" class="nav-link text-white">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
                     Alt Kategori
                 </a>
             </li>
             <li>
-                <a href="/user" class="nav-link text-white">
+                <a href="/admin/user" class="nav-link text-white">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                     Kullanıcılar
                 </a>
             </li>
             <li>
-                <a href="/news" class="nav-link text-white">
+                <a href="/admin/news" class="nav-link text-white">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                     Metin
                 </a>

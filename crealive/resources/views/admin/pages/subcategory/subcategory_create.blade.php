@@ -4,7 +4,7 @@
         <h2>Alt Kategori Ekle</h2>
         <hr>
         <div class="category-create">
-            <a href="/subcategory" class="btn" type="button">Geri Dön</a>
+            <a href="/admin/subcategory" class="btn" type="button">Geri Dön</a>
         </div>
         <br>
         <form>

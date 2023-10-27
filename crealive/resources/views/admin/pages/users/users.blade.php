@@ -2,7 +2,7 @@
 <div class="b-example-vr">
     <div class="category">
         <div class="category-create">
-            <a class="btn" href="/user-create" type="button">Yeni Ekle</a>
+            <a class="btn" href="/admin/user-create" type="button">Yeni Ekle</a>
         </div>
         <table class="table">
             <thead>
@@ -15,7 +15,7 @@
             <tr>
                 <th scope="row">Deneme</th>
                 <td>
-                    <a href="/user-edit"><i style="color: orange" class="fas fa-pencil"></i></a>
+                    <a href="/admin/user-edit"><i style="color: orange" class="fas fa-pencil"></i></a>
                     <a style="margin-left: 10px" href=""><i style="color: red" class="fas fa-trash"></i></a>
                 </td>
             </tr>

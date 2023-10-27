@@ -4,7 +4,7 @@
         <h2>Yazar Düzenle</h2>
         <hr>
         <div class="category-create">
-            <a href="/user" class="btn" type="button">Geri Dön</a>
+            <a href="/admin/user" class="btn" type="button">Geri Dön</a>
         </div>
         <br>
         <form>

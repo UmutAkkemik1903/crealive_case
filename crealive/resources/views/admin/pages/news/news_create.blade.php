@@ -4,7 +4,7 @@
         <h2>Yazı Ekle</h2>
         <hr>
         <div class="category-create">
-            <a href="/news" class="btn" type="button">Geri Dön</a>
+            <a href="/admin/news" class="btn" type="button">Geri Dön</a>
         </div>
         <br>
         <form>
