@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['middleware' => ['web','throttle:60,1','auth']], function () {
+    Route::apiResources([
+        'category' => 'App\Http\Controllers\Api\CategoryController',
+    ]);
+    Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 });
+

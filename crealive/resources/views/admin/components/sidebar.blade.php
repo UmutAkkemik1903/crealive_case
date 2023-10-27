@@ -85,9 +85,9 @@
 
         </ul>
         <hr>
-            <ul class=" text-small shadow">
+            <ul class="text-small">
                 <li>
-                    <a href="#" class="nav-link">
+                    <a href="/logout" class="nav-link">
                         Çıkış Yap
                     </a>
                 </li>

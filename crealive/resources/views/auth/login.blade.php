@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Document</title>
 </head>
 <body>
@@ -16,17 +17,27 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <form>
+                    <form action="{{route('login')}}" method="post">
+                        {{csrf_field()}}
+                        <div>
+                            @if(isset($warningMessage))
+                            @foreach($warningMessage as $message)
+                            <div class="alert alert-danger">
+                                {{ $message }}
+                            </div>
+                            @endforeach
+                            @endif
+                        </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                    aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Şifre</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <button type="submit" class="btn btn-primary">Giriş</button>
+                        <button type="submit" id="button" class="btn btn-primary">Giriş</button>
                     </form>
                 </div>
             </div>
